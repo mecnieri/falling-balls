@@ -1,0 +1,63 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: tahoma;
+  padding: 20px;
+}
+
+#interval,
+#fallingSpeed,
+#playerSpeed,
+#timeout {
+  padding: 5px;
+  border: solid 1px #444;
+  border-radius: 3px;
+  width: 400px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
